@@ -20,6 +20,7 @@ Please contribute new websites!
 - Elsevier / ScienceDirect
 - Eureka Select
 - Science
+- Wiley
 - SpringerLink
 
 ## Screenshots
@@ -37,19 +38,35 @@ Please contribute new websites!
 Copied from:
 https://stackoverflow.com/questions/24577024/install-chrome-extension-form-outside-the-chrome-web-store
 
+## Configuration
+
+You can configure the extension from the source, edit this file `sci-hub-inject.config.js`.
+This can be useful for user living in a country where sci hub is blocked (like in France)
+
 ## Contributing
 
 1. Add link to `manifest.json`.
-2. Add a function to `inject.js`.
+2. Add a function to `sci-hub-inject.js`.
 
    2.1. Extract DOI from website.
 
    2.2. Add element with link to SciHub to DOM. Use the same classes and structure as the website, for niceness.
 
-3. Add an `else if` clause to the if statement in the `addSciHubLink` function in `inject.js`.
+3. Add an `else if` clause to the if statement in the `addSciHubLink` function in `sci-hub-inject.js`.
 4. Test to make sure it works.
 
 Thanks!
+
+## Journals link for tests
+
+- PubMed : https://pubmed.ncbi.nlm.nih.gov/28673424/
+- Nature : https://www.nature.com/articles/144672b0
+- Taylor & Francis : https://www.tandfonline.com/doi/abs/10.1080/00220671.1972.10884418
+- Elsevier / ScienceDirect : https://www.sciencedirect.com/science/article/abs/pii/S187943781630016X
+- Eureka Select :
+- Science :
+- Wiley : 
+- SpringerLink (Article) : https://link.springer.com/article/10.1007/s40278-018-42901-5
 
 ## Important legal notice
 

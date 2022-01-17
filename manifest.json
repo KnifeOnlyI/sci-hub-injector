@@ -11,12 +11,15 @@
         "https://www.nature.com/*",
         "https://www.tandfonline.com/*",
         "https://www.sciencedirect.com/*",
-        "http://www.eurekaselect.com/*",
+        "https://www.eurekaselect.com/*",
         "https://www.science.org/*",
         "https://dom-pubs.onlinelibrary.wiley.com/doi/*",
         "https://link.springer.com/*"
       ],
-      "js": ["sci-hub-inject.user.js"]
+      "js": [
+        "sci-hub-inject.config.js",
+        "sci-hub-inject.user.js"
+      ]
     }
   ],
   "icons": {
